@@ -1,0 +1,23 @@
+{
+  "name": "rcbrb",
+  "version": "1.0.0",
+  "description": "user away status tracker, inspired by brb.coffee from the old hubot scripts repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wildcardcorp/hubot-rcbrb.git"
+  },
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "status"
+  ],
+  "author": "Joel Kleier <joel@kleier.us>",
+  "bugs": {
+    "url": "https://github.com/wildcardcorp/hubot-rcbrb/issues"
+  },
+  "homepage": "https://github.com/wildcardcorp/hubot-rcbrb#readme"
+}
