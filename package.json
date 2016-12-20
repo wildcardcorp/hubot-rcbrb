@@ -1,6 +1,6 @@
 {
-  "name": "rcbrb",
-  "version": "1.0.1",
+  "name": "hubot-rcbrb",
+  "version": "1.0.2",
   "description": "user away status tracker, inspired by brb.coffee from the old hubot scripts repo",
   "main": "index.js",
   "scripts": {
