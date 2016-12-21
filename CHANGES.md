@@ -1,6 +1,10 @@
 hubot-rcbrb
 ===========
 
+1.0.3 (2016-12-20)
+------------------
+- fix commented commmand list to be more descriptive
+
 1.0.2 (2016-12-20)
 ------------------
 - update name in package.json

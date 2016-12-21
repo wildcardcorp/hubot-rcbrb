@@ -12,7 +12,9 @@
 //   none
 //
 // Commands:
-//   no direct commands, just listens for trigger words
+//   brb - when seen, will put you on the away list (any other comment removes you)
+//   afk - when seen, will put you on the away list (any other comment removes you)
+//   lunch - when seen, will put you on the away list (any other comment removes you)
 //
 // Notes:
 //   trigger words: lunch, brb, afk, bbl, bbiab, bbiaf
