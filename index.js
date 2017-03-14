@@ -36,7 +36,6 @@ module.exports = function(robot) {
             metion,
             curname;
         if(is_tracked && !is_going_away_again) {
-            msg.send("Welcome back " + username + "!");
             tracked.splice(idx, 1);
         }
         else {
@@ -45,7 +44,7 @@ module.exports = function(robot) {
                 curname = tracked[i];
                 mention = '@' + curname;
                 if(txt.indexOf(mention) >= 0) {
-                    msg.send(curname + " is currently away.");
+                    msg.send(curname + " may currently be AFK and unable to respond quickly.");
                     break;
                 }
             }

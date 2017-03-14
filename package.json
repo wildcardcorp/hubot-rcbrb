@@ -1,6 +1,6 @@
 {
   "name": "hubot-rcbrb",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "user away status tracker, inspired by brb.coffee from the old hubot scripts repo",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/wildcardcorp/hubot-rcbrb/issues"
   },
-  "homepage": "https://github.com/wildcardcorp/hubot-rcbrb#readme"
+  "homepage": "https://github.com/wildcardcorp/hubot-rcbrb#readme",
+  "contributors": [
+    "Joel Kleier <joel@kleier.us> (https://joelkleier.com)",
+    "T. Kim Nguyen <nguyen@plone.org> (http://about.me/tkimnguyen)"
+  ]
 }

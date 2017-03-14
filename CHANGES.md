@@ -1,6 +1,12 @@
 hubot-rcbrb
 ===========
 
+1.0.4 (2017-03-14)
+------------------
+- add aditional trigger conditions for being away
+- remove "welcome back" message (tends to interrupt conversation more than
+  it helps with anything)
+
 1.0.3 (2016-12-20)
 ------------------
 - fix commented commmand list to be more descriptive
