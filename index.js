@@ -23,8 +23,8 @@
 //   Joel Kleier <joel@kleier.us>
 
 module.exports = function(robot) {
-    var awayre1 = /\b(lunch|brb|afk|bbl|bbiab|bbiaf)\b/i;
-    var awayre2 = /^(back later|away|out)$/i;
+    var awayre1 = /\b(brb|afk|bbl|bbiab|bbiaf)\b/i;
+    var awayre2 = /^(lunch|back later|away|out)$/i;
     var tracked = [];
     var respond_when_away = function(msg) {
         var username = msg.message.user.name,
