@@ -23,14 +23,15 @@
 //   Joel Kleier <joel@kleier.us>
 
 module.exports = function(robot) {
-    var awayre = /\b(lunch|brb|afk|bbl|bbiab|bbiaf)\b/i;
+    var awayre1 = /\b(brb|afk|bbl|bbiab|bbiaf)\b/i;
+    var awayre2 = /^(lunch|back later|away|out)$/i;
     var tracked = [];
     var respond_when_away = function(msg) {
         var username = msg.message.user.name,
             txt = msg.message.text,
             idx = tracked.indexOf(username),
             is_tracked = idx >= 0,
-            is_going_away_again = awayre.test(txt),
+            is_going_away_again = awayre1.test(txt) || awayre2.test(txt),
             numtracked,
             metion,
             curname;
@@ -55,5 +56,6 @@ module.exports = function(robot) {
     };
 
     robot.hear(/./i, respond_when_away);
-    robot.hear(awayre, handle_away);
+    robot.hear(awayre1, handle_away);
+    robot.hear(awayre2, handle_away);
 };
