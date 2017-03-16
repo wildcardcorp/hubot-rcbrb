@@ -1,6 +1,11 @@
 hubot-rcbrb
 ===========
 
+1.0.5 (2017-03-16)
+------------------
+- fix typo
+- fix letting person know they are marked as away
+
 1.0.4 (2017-03-14)
 ------------------
 - add aditional trigger conditions for being away
