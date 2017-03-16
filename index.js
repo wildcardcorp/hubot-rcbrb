@@ -33,10 +33,15 @@ module.exports = function(robot) {
             is_tracked = idx >= 0,
             is_going_away_again = awayre1.test(txt) || awayre2.test(txt),
             numtracked,
-            metion,
+            mention,
             curname;
-        if(is_tracked && !is_going_away_again) {
-            tracked.splice(idx, 1);
+        if(is_tracked) {
+	    if(!is_going_away_again) {
+		tracked.splice(idx, 1);
+	    }
+	    else {
+		msg.send("see you soon, " + username + "!");
+	    }
         }
         else {
             numtracked = tracked.length;
