@@ -24,7 +24,7 @@
 
 module.exports = function(robot) {
     var awayre1 = /\b(brb|afk|bbl|bbiab|bbiaf)\b/i;
-    var awayre2 = /^(lunch|back later|away|out)$/i;
+    var awayre2 = /^(lunch|dinner|night|good night|back later|away|out)$/i;
     var tracked = [];
     var respond_when_away = function(msg) {
         var username = msg.message.user.name,
