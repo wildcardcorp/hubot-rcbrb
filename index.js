@@ -24,7 +24,7 @@
 
 module.exports = function(robot) {
     var awayre1 = /\b(brb|afk|bbl|bbiab|bbiaf)\b/i;
-    var awayre2 = /^(lunch|back later|away|out)$/i;
+    var awayre2 = /^(lunch|dinner|night|good night|back later|away|out)$/i;
     var tracked = [];
     var respond_when_away = function(msg) {
         var username = msg.message.user.name,
@@ -33,10 +33,15 @@ module.exports = function(robot) {
             is_tracked = idx >= 0,
             is_going_away_again = awayre1.test(txt) || awayre2.test(txt),
             numtracked,
-            metion,
+            mention,
             curname;
-        if(is_tracked && !is_going_away_again) {
-            tracked.splice(idx, 1);
+        if(is_tracked) {
+	    if(!is_going_away_again) {
+		tracked.splice(idx, 1);
+	    }
+	    else {
+		msg.send("see you soon, " + username + "!");
+	    }
         }
         else {
             numtracked = tracked.length;
